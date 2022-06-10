@@ -7,6 +7,7 @@
     --outframe: -200px;
     --animspeed-1: 0.2s;
     --animspeed-2: 1s;
+    --animspeed-3: 1.5s;
     --accent: rgba(143, 142, 255, 0.692);
 }
 
@@ -22,11 +23,13 @@ html, body {
 
 @keyframes page-transition-in {
     0%   { left: 0%; }
+    20%   { left: 0%; }
     100% { left: -100% }
 }
 
 @keyframes page-transition-out {
     0%   { left: -100%; }
+    20%   { left: -100%; }
     100% { left: 0% }
 }
 
@@ -36,7 +39,7 @@ div#transition-plate {
     background-color: rgb(255, 215, 86);
     position: fixed;
     left: -100%;
-    animation: page-transition-in var(--animspeed-2);
+    animation: page-transition-in var(--animspeed-3);
 }
 
 div#transition-plate.exit {
