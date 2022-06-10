@@ -5,7 +5,7 @@
 
 :root {
     --outframe: -200px;
-    --animspeed-1: 1s;
+    --animspeed-1: 0.2s;
     --animspeed-2: 1s;
     --accent: rgba(143, 142, 255, 0.692);
 }
@@ -63,7 +63,7 @@ div.nav-bar {
     padding: 10px;
     display: flex;
     animation: simple-slide-down var(--animspeed-2);
-    top: -100px;
+    /*top: -100px;*/
 }
 
 div.nav-bar button {
@@ -130,11 +130,11 @@ div.nav-bar button:hover {
 
 @keyframes simple-slide-up {
     0% {top: 0}
-    100% {top: -100}
+    100% {top: var(--outframe)}
 }
 
 @keyframes simple-slide-down {
-    0% {top: -100}
+    0% {top: var(--outframe)}
     100% {top: 0}
 }
 
