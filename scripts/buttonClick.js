@@ -7,7 +7,7 @@ function buttonClick(currentID, href) {
     setTimeout(() => {
         navbar = document.getElementsByClassName("nav-bar")[0];
         navbar.style.animation = "simple-slide-up 1s";
-        //navbar.style.top = "-100px";
+        navbar.style.top = "-100px";
     }, 500);
     setTimeout(() => {
         window.location.href = href;

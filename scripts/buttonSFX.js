@@ -6,3 +6,12 @@ document.addEventListener("mouseover", (event) => {
         sound.play()
     }
 })
+
+//Click Slide FX
+document.addEventListener("click", (event) => {
+    if (event.target.tagName === "BUTTON") {
+        console.log("CLICK")
+        const sound = new Audio("assets/sounds/clickbuttonslide.wav");
+        sound.play()
+    }
+})
