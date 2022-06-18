@@ -19,11 +19,11 @@ window.onload = function() {
         console.log(`Current Pos  = ${currentPosition}`)
         console.log(`Previous Pos = ${prevPosition}`)
         if ((prevPosition > currentPosition || currentPosition < alwaysShownPosition) && animationIsPlaying === false ) {
-            //navbar.style.animation = "simple-slide-down 1s";
-            //navbar.style.top = "0";
+            navbar.style.animation = "simple-slide-down 1s";
+            navbar.style.top = "0";
         } else if (prevPosition < currentPosition && animationIsPlaying === false && currentPosition > alwaysShownPosition){
-            //navbar.style.animation = "simple-slide-up 1s";
-            //navbar.style.top = "-100px";
+            navbar.style.animation = "simple-slide-up 1s";
+            navbar.style.top = "-100px";
         }
         prevPosition = currentPosition;
     }
